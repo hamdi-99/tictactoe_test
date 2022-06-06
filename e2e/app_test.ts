@@ -24,7 +24,7 @@ describe('my app', () => {
 
     browser.sleep(500);
 
-    expect(element(by.css('.outcome')).getText()).toEqual('Jane wins!');
+    expect(element(by.css('.outcome')).getText()).toEqual('Hamdi wins!');
   });
 
 
@@ -47,6 +47,6 @@ describe('my app', () => {
     browser.actions().sendKeys("33").perform();
     browser.sleep(500);
 
-    expect(element(by.css('.outcome')).getText()).toEqual('Elizabeth wins!');
+    expect(element(by.css('.outcome')).getText()).toEqual('Youssef wins!');
   });
 });

@@ -44,18 +44,18 @@ describe('Game UI', () => {
     fixture.debugElement.query(By.css('ttt-board')).triggerEventHandler('turnswap', 'o');
     fixture.detectChanges();
 
-    expect(fixture.nativeElement.textContent).toContain('Elizabeth\'s turn');
+    expect(fixture.nativeElement.textContent).toContain('Youssef\'s turn');
   });
   
   it('should bind to player name', () => {
     let fixture = TestBed.createComponent(GameComponent);
     fixture.detectChanges();
     
-    expect(fixture.nativeElement.textContent).toContain('Jane\'s turn');
+    expect(fixture.nativeElement.textContent).toContain('Hamdi\'s turn');
     
-    fixture.componentInstance.playerX = 'Eddie';
+    fixture.componentInstance.playerX = 'Mahdi';
     fixture.detectChanges();
 
-    expect(fixture.nativeElement.textContent).toContain('Eddie\'s turn');
+    expect(fixture.nativeElement.textContent).toContain('Mahdi\'s turn');
   });
 });

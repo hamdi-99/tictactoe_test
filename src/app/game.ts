@@ -32,8 +32,8 @@ export class GameComponent {
   @ViewChild(Board)
   private board: Board;
   
-  public playerX = 'Jane';
-  public playerO = 'Elizabeth';
+  public playerX = 'Hamdi';
+  public playerO = 'Youssef';
   public outcome: string;
   public xTurn = true;
   public oTurn = false;
